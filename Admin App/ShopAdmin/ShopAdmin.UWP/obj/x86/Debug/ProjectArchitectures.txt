@@ -1,0 +1,2 @@
+C:\Users\JSPP\documents\visual studio 2017\Projects\ShopAdmin\ShopAdmin\ShopAdmin.UWP\ShopAdmin.UWP.csproj;x86
+C:\Users\JSPP\documents\visual studio 2017\Projects\ShopAdmin\ShopAdmin\ShopAdmin\ShopAdmin.csproj;neutral

@@ -1,0 +1,117 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ShopAdmin.Views.FeedbacksPage"
+             NavigationPage.HasNavigationBar="False">
+
+    <StackLayout>
+        <ActivityIndicator x:Name="indication"/>
+        <ListView 
+				x:Name="FeedbackList"
+        		HasUnevenRows="true"
+                ItemSelected="FeedbackList_ItemSelected"
+                ItemTapped="FeedbackList_ItemTapped">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <ViewCell>
+                        <Grid Padding="10">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="10"/>
+                                <ColumnDefinition Width="Auto"/>
+                                <ColumnDefinition Width="*"/>
+                            </Grid.ColumnDefinitions>
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="Auto"/>
+                                <RowDefinition Height="Auto"/>
+                                <RowDefinition Height="Auto"/>
+                                <RowDefinition Height="Auto"/>
+                                <RowDefinition Height="Auto"/>
+                            </Grid.RowDefinitions>
+                            <BoxView 
+						 		Grid.RowSpan="5"
+						 		x:Name="colorBox"
+                                Color="{Binding BoxColor}"/>
+
+                            <Label 
+						 			Grid.Column="1"
+						 			Text="Store Name" 
+                                    Grid.Row="1"
+						 			HorizontalOptions="End"
+						 			VerticalOptions="Center"/>
+
+                            <Label 
+						 			Grid.Column="1"
+                                    Grid.Row="0"
+						 			Text="Visit Date" 
+						 			HorizontalOptions="End"
+						 			VerticalOptions="Center"/>
+
+                            <Label 
+						 			Grid.Column="1"
+						 			Grid.Row="2"
+						 			Text="Name" 
+					 				HorizontalOptions="End"
+						 			VerticalOptions="Center"/>
+
+                            <Label 
+						 			Grid.Column="1"
+						 			Grid.Row="3"
+						 			Text="Needs Call?" 
+						 			HorizontalOptions="End"
+						 			VerticalOptions="Center"/>
+
+                            <Label 
+						 			Grid.Column="1"
+						 			Grid.Row="4"
+						 			Text="Feedback" 
+						 			HorizontalOptions="End"
+						 			VerticalOptions="Start"/>
+
+                            <Label 
+						 			Grid.Column="2"
+						 			Grid.Row="0"
+									Text="{Binding Feedback.VisitDate, StringFormat='{0:MMMM dd, yyyy}'}"
+				                	FontSize="Medium"
+				                	TextColor="#3498DB" 
+				                	LineBreakMode="NoWrap"
+						 			VerticalOptions="Center"/>
+
+                            <Label 
+							 		   Grid.Column="2"
+							 		   Grid.Row="2"
+				                	   Text="{Binding Feedback.Name}" 
+				                	   LineBreakMode="NoWrap"
+						 			   VerticalOptions="Center"/>
+
+                            <Label
+						 				Grid.Column="2"
+						 			   Grid.Row="3" 
+				                	   IsVisible="{Binding Call}"
+				                	   VerticalOptions="Center"
+				                	   Text="YES"/>
+
+
+                            <Label 
+							 		   Grid.Column="2"
+							 		   Grid.Row="4"
+				                	   Text="{Binding Feedback.Text}" 
+				                	   LineBreakMode="WordWrap"
+						 			   VerticalOptions="Center"/>
+
+                            <Label 
+							 		   Grid.Column="2"
+							 		   Grid.Row="1"
+				                	   Text="{Binding Feedback.StoreName}" 
+				                	   LineBreakMode="WordWrap"
+						 			   VerticalOptions="Center"/>
+                        </Grid>
+                        <ViewCell.ContextActions>
+                            <MenuItem Text="Delete" Clicked="MenuItem_Clicked" CommandParameter="{Binding .}"/>
+                        </ViewCell.ContextActions>
+                    </ViewCell>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+    </StackLayout>
+
+</ContentPage>

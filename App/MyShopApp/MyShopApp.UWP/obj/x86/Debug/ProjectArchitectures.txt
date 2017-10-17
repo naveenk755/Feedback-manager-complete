@@ -1,0 +1,2 @@
+C:\Users\JSPP\Documents\Visual Studio 2017\Projects\XamarinForms\MyShopApp\MyShopApp\MyShopApp.UWP\MyShopApp.UWP.csproj;x86
+C:\Users\JSPP\Documents\Visual Studio 2017\Projects\XamarinForms\MyShopApp\MyShopApp\MyShopApp\MyShopApp.csproj;neutral

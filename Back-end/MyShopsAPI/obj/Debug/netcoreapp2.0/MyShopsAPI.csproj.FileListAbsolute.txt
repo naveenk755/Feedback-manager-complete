@@ -1,0 +1,11 @@
+c:\users\jspp\documents\visual studio 2017\Projects\MyShopsAPI\MyShopsAPI\bin\Debug\netcoreapp2.0\MyShopsAPI.deps.json
+c:\users\jspp\documents\visual studio 2017\Projects\MyShopsAPI\MyShopsAPI\bin\Debug\netcoreapp2.0\MyShopsAPI.runtimeconfig.json
+c:\users\jspp\documents\visual studio 2017\Projects\MyShopsAPI\MyShopsAPI\bin\Debug\netcoreapp2.0\MyShopsAPI.runtimeconfig.dev.json
+c:\users\jspp\documents\visual studio 2017\Projects\MyShopsAPI\MyShopsAPI\bin\Debug\netcoreapp2.0\MyShopsAPI.dll
+c:\users\jspp\documents\visual studio 2017\Projects\MyShopsAPI\MyShopsAPI\obj\Debug\netcoreapp2.0\MyShopsAPI.csprojResolveAssemblyReference.cache
+c:\users\jspp\documents\visual studio 2017\Projects\MyShopsAPI\MyShopsAPI\obj\Debug\netcoreapp2.0\MyShopsAPI.csproj.CoreCompileInputs.cache
+c:\users\jspp\documents\visual studio 2017\Projects\MyShopsAPI\MyShopsAPI\obj\Debug\netcoreapp2.0\MyShopsAPI.AssemblyInfoInputs.cache
+c:\users\jspp\documents\visual studio 2017\Projects\MyShopsAPI\MyShopsAPI\obj\Debug\netcoreapp2.0\MyShopsAPI.AssemblyInfo.cs
+c:\users\jspp\documents\visual studio 2017\Projects\MyShopsAPI\MyShopsAPI\bin\Debug\netcoreapp2.0\MyShopsAPI.pdb
+c:\users\jspp\documents\visual studio 2017\Projects\MyShopsAPI\MyShopsAPI\obj\Debug\netcoreapp2.0\MyShopsAPI.dll
+c:\users\jspp\documents\visual studio 2017\Projects\MyShopsAPI\MyShopsAPI\obj\Debug\netcoreapp2.0\MyShopsAPI.pdb

@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ShopAdmin.Views.ShopPage"
+             NavigationPage.HasNavigationBar="False">
+
+    <StackLayout>
+        <TableView Intent="Form">
+            <TableSection Title="Information">
+                <EntryCell Label="Name" Text="{Binding Name}" x:Name="nameEntryCell" LabelColor="#3498DB"/>
+                <EntryCell Label="Phone Number" Text="{Binding PhoneNumber}" x:Name="phoneEntryCell" LabelColor="#3498DB"/>
+            </TableSection>
+            <TableSection Title="Image">
+                <EntryCell Label="Image Url" Text="{Binding Image}" x:Name="imageEntryCell" LabelColor="#3498DB"/>
+            </TableSection>
+            <TableSection Title="Address">
+                <EntryCell Label="Street Address" Text="{Binding StreetAddress}" x:Name="streeAddressEntry" LabelColor="#3498DB"/>
+                <EntryCell Label="City" Text="{Binding City}" x:Name="cityEntryCell" LabelColor="#3498DB"/>
+                <EntryCell Label="State" Text="{Binding State}" x:Name="stateEntryCell" LabelColor="#3498DB"/>
+                <EntryCell Label="Zip Code" Text="{Binding ZipCode}" x:Name="zipcodeEntryCell" LabelColor="#3498DB"/>
+                <EntryCell Label="Longitude" Text="{Binding Longitude}" x:Name="longitudeEntryCell" LabelColor="#3498DB"/>
+                <EntryCell Label="Latitude" Text="{Binding Latitude}" x:Name="latitudeEntryCell" LabelColor="#3498DB"/>
+            </TableSection>
+        </TableView>
+        <Button Text="Save Changes" Clicked="Button_Clicked_1" BackgroundColor="#3498DB"
+				BorderRadius="0"
+				TextColor="White"/>
+    </StackLayout>
+    
+</ContentPage>
